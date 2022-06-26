@@ -2,7 +2,7 @@ import Foundation
 import XCTest
 
 /*:
- # Ransom Note - EASE
+ # Ransom Note - EASY
  https://leetcode.com/problems/ransom-note/
  
  Each letter in magazine can only be used once in ransomNote.
