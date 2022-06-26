@@ -54,7 +54,7 @@ class Tests: XCTestCase {
     }
     
     func test4() {
-        let value = solution.canConstruct("kenny", "kennny")
+        let value = solution.canConstruct("kennny", "kenny")
         XCTAssertEqual(value, false)
     }
 }
