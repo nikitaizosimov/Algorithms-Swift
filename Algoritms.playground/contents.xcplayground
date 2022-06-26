@@ -3,5 +3,6 @@
     <pages>
         <page name='Readmy'/>
         <page name='Roman to Integer (LeetCode)'/>
+        <page name='Ransom Note (LeetCode)'/>
     </pages>
 </playground>
