@@ -1,4 +1,5 @@
-import UIKit
+import Foundation
+import XCTest
 
 /*:
  # Convert Roman Numbers to Integer - EASY
@@ -57,8 +58,6 @@ class Solution {
         return sum + prevNum
     }
 }
-
-import XCTest
 
 class Tests: XCTestCase {
     
