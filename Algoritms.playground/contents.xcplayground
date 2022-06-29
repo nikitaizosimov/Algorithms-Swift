@@ -6,5 +6,6 @@
         <page name='Ransom Note (LeetCode)'/>
         <page name='Palindrome Linked List (LeetCode)'/>
         <page name='Richest Customer Wealth (LeetCode)'/>
+        <page name='Number of Steps to Reduce a Number to Zero (LeetCode)'/>
     </pages>
 </playground>
