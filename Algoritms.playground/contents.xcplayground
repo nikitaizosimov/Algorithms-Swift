@@ -7,5 +7,6 @@
         <page name='Palindrome Linked List (LeetCode)'/>
         <page name='Richest Customer Wealth (LeetCode)'/>
         <page name='Number of Steps to Reduce a Number to Zero (LeetCode)'/>
+        <page name='The K Weakest Rows in a Matrix (LeetCode)'/>
     </pages>
 </playground>
