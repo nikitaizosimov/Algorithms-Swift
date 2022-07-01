@@ -18,6 +18,10 @@ import XCTest
  Input: mat = [[1,0,0,0], [1,1,1,1], [1,0,0,0], [1,0,0,0]]
  k = 2
  Output: [0,2]
+ 
+ Input: mat = [[1,0,1,1], [1,0,0,1], [1,0,0,0]]
+ k = 2
+ Output: [1,2]
  */
 
 class Solution {
@@ -45,6 +49,12 @@ class Tests: XCTestCase {
         let mat = [[1,0,0,0], [1,1,1,1], [1,0,0,0], [1,0,0,0]]
         let value = solution.kWeakestRows(mat, 2)
         XCTAssertEqual(value, [0,2])
+    }
+    
+    func test2() {
+        let mat = [[1,0,1,1], [1,0,0,1], [1,0,0,0]]
+        let value = solution.kWeakestRows(mat, 2)
+        XCTAssertEqual(value, [2,1])
     }
 }
 
