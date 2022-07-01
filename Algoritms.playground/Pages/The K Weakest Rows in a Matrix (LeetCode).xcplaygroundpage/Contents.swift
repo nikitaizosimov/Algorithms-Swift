@@ -23,20 +23,11 @@ import XCTest
 class Solution {
     
     func kWeakestRows(_ mat: [[Int]], _ k: Int) -> [Int] {
-        let mutSum = mat.map { $0.reduce(0) { $0 + $1 } }
-        var newMat = [Int: Int]()
-        
-        for (index, mutSum) in mutSum.enumerated() {
-            newMat[index] = mutSum
-        }
-        
-        return newMat.sorted { row1, row2 in
-            if row1.value == row2.value {
-                return row1.key < row2.key
-            } else {
-                return row1.value < row2.value
-            }
-        }.prefix(k).compactMap { $0.key }
+        mat.map { $0.reduce(0) { $0 + $1 } }
+            .enumerated().map { ($0, $1) }
+            .sorted { $0.1 < $1.1 }
+            .prefix(k)
+            .map { $0.0 }
     }
 }
 
@@ -53,7 +44,7 @@ class Tests: XCTestCase {
     func test1() {
         let mat = [[1,0,0,0], [1,1,1,1], [1,0,0,0], [1,0,0,0]]
         let value = solution.kWeakestRows(mat, 2)
-        XCTAssertEqual(value, [2,0])
+        XCTAssertEqual(value, [0,2])
     }
 }
 
