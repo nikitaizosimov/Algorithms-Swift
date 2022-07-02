@@ -40,7 +40,15 @@ public class ListNode {
 class Solution {
     
     func isPalindrome(_ head: ListNode?) -> Bool {
-        return false
+        var array = [Int]()
+        var currentList = head
+        
+        while let list = currentList {
+            array.append(list.val)
+            currentList = list.next
+        }
+        
+        return Array(array.prefix(array.count / 2)) == Array(array.suffix(array.count / 2).reversed())
     }
 }
 
@@ -48,19 +56,28 @@ class Tests: XCTestCase {
     
     private let solution = Solution()
     
-    private let aList = ListNode()
-    //private let bList = ListNode(1, aList)
-    //private let bList = ListNode(2, aList)
+    private let aList = ListNode(1)
+    private let bList = ListNode(2)
+    private let cList = ListNode(2)
+    private let dList = ListNode(1)
     
-//    func test0() {
-//        let value = solution.canConstruct("aa", "ab")
-//        XCTAssertEqual(value, false)
-//    }
-//
-//    func test1() {
-//        let value = solution.canConstruct("aa", "aab")
-//        XCTAssertEqual(value, true)
-//    }
+    private func makeBinding() {
+        aList.next = bList
+        bList.next = cList
+        cList.next = dList
+    }
+    
+    func test0() {
+        makeBinding()
+        let value = solution.isPalindrome(aList)
+        XCTAssertEqual(value, true)
+    }
+    
+    func test1() {
+        makeBinding()
+        let value = solution.isPalindrome(bList)
+        XCTAssertEqual(value, false)
+    }
 }
 
 Tests.defaultTestSuite.run()
