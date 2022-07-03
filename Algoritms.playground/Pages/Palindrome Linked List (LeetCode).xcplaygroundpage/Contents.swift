@@ -16,7 +16,7 @@ import XCTest
  Output: false
  */
 
-public class ListNode {
+class ListNode {
     
       var val: Int
       var next: ListNode?
