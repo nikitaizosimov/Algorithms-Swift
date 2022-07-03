@@ -8,3 +8,4 @@
 4. Palindrome Linked List - EASY - https://leetcode.com/problems/palindrome-linked-list/
 5. Richest Customer Wealth - EASY - https://leetcode.com/problems/richest-customer-wealth/
 6. Number of Steps to Reduce a Number to Zero - EASY - https://leetcode.com/problems/number-of-steps-to-reduce-a-number-to-zero/
+7. Middle of the Linked List  - EASY - https://leetcode.com/problems/middle-of-the-linked-list/
