@@ -10,5 +10,6 @@
         <page name='The K Weakest Rows in a Matrix (LeetCode)'/>
         <page name='Middle of the Linked List (LeetCode)'/>
         <page name='Fibonacci Number (LeetCode)'/>
+        <page name='Two Sum (LeetCode)'/>
     </pages>
 </playground>

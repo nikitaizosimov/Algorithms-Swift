@@ -10,3 +10,4 @@
 6. Number of Steps to Reduce a Number to Zero - EASY - https://leetcode.com/problems/number-of-steps-to-reduce-a-number-to-zero/
 7. Middle of the Linked List  - EASY - https://leetcode.com/problems/middle-of-the-linked-list/
 8. Fibonacci Number (LeetCode) - EASY - https://leetcode.com/problems/fibonacci-number/
+9. Two Sum - EASY - https://leetcode.com/problems/two-sum/
