@@ -11,3 +11,4 @@
 7. Middle of the Linked List  - EASY - https://leetcode.com/problems/middle-of-the-linked-list/
 8. Fibonacci Number (LeetCode) - EASY - https://leetcode.com/problems/fibonacci-number/
 9. Two Sum - EASY - https://leetcode.com/problems/two-sum/
+10. Running Sum of 1d Array (LeetCode) - EASY - https://leetcode.com/problems/running-sum-of-1d-array/
