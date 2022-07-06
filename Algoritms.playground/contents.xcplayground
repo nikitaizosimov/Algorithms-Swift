@@ -13,5 +13,6 @@
         <page name='Two Sum (LeetCode)'/>
         <page name='Running Sum of 1d Array (LeetCode)'/>
         <page name='Find Pivot Index (LeetCode)'/>
+        <page name='Is Subsequence (LeetCode)'/>
     </pages>
 </playground>
