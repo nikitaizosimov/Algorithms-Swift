@@ -12,3 +12,4 @@
 8. Fibonacci Number - EASY - https://leetcode.com/problems/fibonacci-number/
 9. Two Sum - EASY - https://leetcode.com/problems/two-sum/
 10. Running Sum of 1d Array - EASY - https://leetcode.com/problems/running-sum-of-1d-array/
+11. Find Pivot Index - EASY - https://leetcode.com/problems/find-pivot-index/

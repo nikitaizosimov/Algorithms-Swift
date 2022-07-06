@@ -12,5 +12,6 @@
         <page name='Fibonacci Number (LeetCode)'/>
         <page name='Two Sum (LeetCode)'/>
         <page name='Running Sum of 1d Array (LeetCode)'/>
+        <page name='Find Pivot Index (LeetCode)'/>
     </pages>
 </playground>
