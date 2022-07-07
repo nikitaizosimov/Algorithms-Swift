@@ -13,4 +13,5 @@
 9. Two Sum - EASY - https://leetcode.com/problems/two-sum/
 10. Running Sum of 1d Array - EASY - https://leetcode.com/problems/running-sum-of-1d-array/
 11. Find Pivot Index - EASY - https://leetcode.com/problems/find-pivot-index/
-12. Is Subsequence- EASY - https://leetcode.com/problems/is-subsequence/
+12. Is Subsequence - EASY - https://leetcode.com/problems/is-subsequence/
+13. Isomorphic Strings - EASY - https://leetcode.com/problems/isomorphic-strings/
