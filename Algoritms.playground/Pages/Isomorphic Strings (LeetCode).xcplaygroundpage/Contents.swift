@@ -25,7 +25,15 @@ import XCTest
 class Solution {
     
     func isIsomorphic(_ s: String, _ t: String) -> Bool {
-        return true
+        let tempArray = Array(s)
+        
+        var dictCipher = [Character: Character]()
+        
+        for (index, char) in s.enumerated() {
+            dictCipher[char] = Array(t)[index]
+        }
+        
+        return String(tempArray.compactMap { dictCipher[$0]  }) == t
     }
 }
 
