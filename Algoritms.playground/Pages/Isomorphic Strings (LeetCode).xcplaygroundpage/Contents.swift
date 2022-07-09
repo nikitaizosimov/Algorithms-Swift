@@ -20,20 +20,39 @@ import XCTest
 
  Input: s = "paper", t = "title" \
  Output: true
+ 
+ Input: s = "a", t = "a" \
+ Output: true
+ 
+ Input: s = "badc", t = "baba" \
+ Output: false
  */
 
 class Solution {
-    
     func isIsomorphic(_ s: String, _ t: String) -> Bool {
-        let tempArray = Array(s)
-        
-        var dictCipher = [Character: Character]()
-        
-        for (index, char) in s.enumerated() {
-            dictCipher[char] = Array(t)[index]
+        guard s.count == t.count else {
+            return false
         }
         
-        return String(tempArray.compactMap { dictCipher[$0]  }) == t
+        var dictCipher = [Character: Character]()
+        var seenChar = Set<Character>()
+        
+        for (sChar, tChar) in zip(s, t) {
+            if let sVal = dictCipher[sChar] {
+                guard sVal == tChar else {
+                    return false
+                }
+            } else {
+                guard !seenChar.contains(tChar) else {
+                    return false
+                }
+                
+                dictCipher[sChar] = tChar
+                seenChar.insert(tChar)
+            }
+        }
+        
+        return true
     }
 }
 
@@ -55,7 +74,16 @@ class Tests: XCTestCase {
         let value = solution.isIsomorphic("paper", "title")
         XCTAssertEqual(value, true)
     }
+    
+    func test3() {
+        let value = solution.isIsomorphic("a", "a")
+        XCTAssertEqual(value, true)
+    }
+    
+    func test4() {
+        let value = solution.isIsomorphic("badc", "baba")
+        XCTAssertEqual(value, false)
+    }
 }
 
 Tests.defaultTestSuite.run()
-
