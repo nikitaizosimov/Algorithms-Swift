@@ -15,6 +15,7 @@
         <page name='Find Pivot Index (LeetCode)'/>
         <page name='Is Subsequence (LeetCode)'/>
         <page name='Isomorphic Strings (LeetCode)'/>
-        <page name='Merge Two Sorted Lists (LeetCode)'/>
+        <page name='-Merge Two Sorted Lists (LeetCode)'/>
+        <page name=' Number of 1 Bits (LeetCode)'/>
     </pages>
 </playground>
