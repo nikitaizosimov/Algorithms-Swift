@@ -22,8 +22,7 @@ import XCTest
 class Solution {
     
     func hammingWeight(_ n: Int) -> Int {
-        let nString = String(n)
-        return String(n).reduce(0) { $0 + $1 == "0" ? 0 : 1 }
+        return n.nonzeroBitCount
     }
 }
 
@@ -32,18 +31,9 @@ class Tests: XCTestCase {
     private let solution = Solution()
     
     func test0() {
-        let value = solution.hammingWeight(00000000000000000000000000001011)
+        let num: UInt32 = 00000000000000000000000000001011
+        let value = solution.hammingWeight(Int(num))
         XCTAssertEqual(value, 3)
-    }
-
-    func test1() {
-        let value = solution.hammingWeight(00000000000000000000000010000000)
-        XCTAssertEqual(value, 1)
-    }
-    
-    func test2() {
-        let value = solution.hammingWeight(11111111111111111111111111111101)
-        XCTAssertEqual(value, 31)
     }
 }
 

@@ -15,3 +15,4 @@
 11. Find Pivot Index - EASY - https://leetcode.com/problems/find-pivot-index/
 12. Is Subsequence - EASY - https://leetcode.com/problems/is-subsequence/
 13. Isomorphic Strings - EASY - https://leetcode.com/problems/isomorphic-strings/
+14. Number of 1 Bits - EASY - https://leetcode.com/problems/number-of-1-bits/
