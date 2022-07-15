@@ -16,3 +16,4 @@
 12. Is Subsequence - EASY - https://leetcode.com/problems/is-subsequence/
 13. Isomorphic Strings - EASY - https://leetcode.com/problems/isomorphic-strings/
 14. Number of 1 Bits - EASY - https://leetcode.com/problems/number-of-1-bits/
+15. Best Time to Buy and Sell Stock - EASY - https://leetcode.com/problems/best-time-to-buy-and-sell-stock/

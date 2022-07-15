@@ -17,5 +17,6 @@
         <page name='Isomorphic Strings (LeetCode)'/>
         <page name='-Merge Two Sorted Lists (LeetCode)'/>
         <page name=' Number of 1 Bits (LeetCode)'/>
+        <page name='Best Time to Buy and Sell Stock (LeetCode)'/>
     </pages>
 </playground>
