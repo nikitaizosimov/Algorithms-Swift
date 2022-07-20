@@ -18,5 +18,6 @@
         <page name='-Merge Two Sorted Lists (LeetCode)'/>
         <page name=' Number of 1 Bits (LeetCode)'/>
         <page name='Best Time to Buy and Sell Stock (LeetCode)'/>
+        <page name='Longest Common Prefix (LeetCode)'/>
     </pages>
 </playground>
