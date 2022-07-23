@@ -2,7 +2,7 @@ import Foundation
 import XCTest
 
 /*:
- # String to Integer - Atoi - EASY
+ # String to Integer - Atoi - Medium
  https://leetcode.com/problems/string-to-integer-atoi/
  
  The algorithm for myAtoi(string s) is as follows:
@@ -42,24 +42,24 @@ class Solution {
         var isStarted = false
         
         for char in s {
-            guard char.isNumber || char == "-" || char == "+" || char == " " else {
-                if isStarted {
-                    break
-                } else {
-                    continue
-                }
-            }
-            
-            isStarted = true
-            
-            if char.isNumber {
+            if char.isWhitespace {
+                guard !isStarted else { break }
+                
+                continue
+            } else if char.isNumber {
                 sum = sum * 10 + (char.wholeNumberValue ?? 0)
                 if sum > Int32.max {
                     return signSum == 1 ? Int(Int32.max) : Int(Int32.min)
                 }
-            } else {
+            } else if char == "-" || char == "+" {
+                guard !isStarted else { break }
+                
                 signSum *= char == "-" ? -1 : 1
+            } else {
+                break
             }
+            
+            isStarted = true
         }
         
         return sum * signSum
