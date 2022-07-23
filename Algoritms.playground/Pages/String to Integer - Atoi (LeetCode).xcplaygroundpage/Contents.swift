@@ -28,12 +28,41 @@ import XCTest
  
  Input: s = "4193 with words"
  Output: 4193
+ 
+ Input: s = "words and 987"
+ Output: 0
  */
 
 class Solution {
     
     func myAtoi(_ s: String) -> Int {
-        return Int(s) ?? 0
+        var sum = 0
+        
+        var signSum = 1
+        var isStarted = false
+        
+        for char in s {
+            guard char.isNumber || char == "-" || char == "+" || char == " " else {
+                if isStarted {
+                    break
+                } else {
+                    continue
+                }
+            }
+            
+            isStarted = true
+            
+            if char.isNumber {
+                sum = sum * 10 + (char.wholeNumberValue ?? 0)
+                if sum > Int32.max {
+                    return signSum == 1 ? Int(Int32.max) : Int(Int32.min)
+                }
+            } else {
+                signSum *= char == "-" ? -1 : 1
+            }
+        }
+        
+        return sum * signSum
     }
 }
 
@@ -45,7 +74,7 @@ class Tests: XCTestCase {
         let value = solution.myAtoi("42")
         XCTAssertEqual(value, 42)
     }
-
+    
     func test1() {
         let value = solution.myAtoi("   -42")
         XCTAssertEqual(value, -42)
@@ -54,6 +83,11 @@ class Tests: XCTestCase {
     func test2() {
         let value = solution.myAtoi("4193 with words")
         XCTAssertEqual(value, 4193)
+    }
+    
+    func test3() {
+        let value = solution.myAtoi("words and 987")
+        XCTAssertEqual(value, 0)
     }
 }
 
