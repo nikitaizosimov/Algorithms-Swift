@@ -2,6 +2,10 @@
  
 ## LeetCode:
 
+**Total: 17**
+
+### EASY
+
 1. Roman to Integer (EASY) - https://leetcode.com/problems/roman-to-integer/
 2. Ransom Note - EASY -  https://leetcode.com/problems/ransom-note/
 3. Fizz Buzz - EASY - https://leetcode.com/problems/fizz-buzz/
@@ -18,4 +22,7 @@
 14. Number of 1 Bits - EASY - https://leetcode.com/problems/number-of-1-bits/
 15. Best Time to Buy and Sell Stock - EASY - https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
 16. Longest Common Prefix - EASY - https://leetcode.com/problems/longest-common-prefix/
-17. String to Integer - Atoi - MEDIUM - https://leetcode.com/problems/string-to-integer-atoi/ 
+
+### MEDIUM
+
+1. String to Integer - Atoi - MEDIUM - https://leetcode.com/problems/string-to-integer-atoi/ 
