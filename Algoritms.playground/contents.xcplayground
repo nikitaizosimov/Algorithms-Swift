@@ -20,5 +20,6 @@
         <page name='Best Time to Buy and Sell Stock (LeetCode)'/>
         <page name='Longest Common Prefix (LeetCode)'/>
         <page name='String to Integer - Atoi (LeetCode)'/>
+        <page name='Palindrome Number (LeetCode)'/>
     </pages>
 </playground>
