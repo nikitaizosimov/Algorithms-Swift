@@ -23,6 +23,7 @@
 15. Best Time to Buy and Sell Stock - EASY - https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
 16. Longest Common Prefix - EASY - https://leetcode.com/problems/longest-common-prefix/
 17. Palindrome Number - EASY - https://leetcode.com/problems/palindrome-number/
+18. The K Weakest Rows in a Matrix  - EASY - https://leetcode.com/problems/the-k-weakest-rows-in-a-matrix/
 
 ### MEDIUM
 
