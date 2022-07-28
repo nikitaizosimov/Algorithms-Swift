@@ -21,5 +21,6 @@
         <page name='Longest Common Prefix (LeetCode)'/>
         <page name='String to Integer - Atoi (LeetCode)'/>
         <page name='Palindrome Number (LeetCode)'/>
+        <page name='Reverse Integer (LeetCode)'/>
     </pages>
 </playground>
