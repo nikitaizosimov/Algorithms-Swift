@@ -2,7 +2,7 @@
  
 ## LeetCode:
 
-**Total: 20**
+**Total: 21**
 
 ### EASY
 
@@ -24,6 +24,7 @@
 16. Longest Common Prefix - https://leetcode.com/problems/longest-common-prefix/
 17. Palindrome Number - https://leetcode.com/problems/palindrome-number/
 18. The K Weakest Rows in a Matrix  - https://leetcode.com/problems/the-k-weakest-rows-in-a-matrix/
+19. Valid Parentheses - https://leetcode.com/problems/valid-parentheses/
 
 ### MEDIUM
 

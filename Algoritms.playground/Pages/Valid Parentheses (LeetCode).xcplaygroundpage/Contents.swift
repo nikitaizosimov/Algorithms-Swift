@@ -42,14 +42,10 @@ class Solution {
             guard let lastStackSymbol = symbolStack.last else { return false }
             
             switch parenthes {
-            case ")":
-                guard lastStackSymbol == "(" else { return false }
-            case "]":
-                guard lastStackSymbol == "[" else { return false }
-            case "}":
-                guard lastStackSymbol == "{" else { return false }
-            default:
-                return false
+            case ")": guard lastStackSymbol == "(" else { return false }
+            case "]": guard lastStackSymbol == "[" else { return false }
+            case "}": guard lastStackSymbol == "{" else { return false }
+            default: return false
             }
             
             symbolStack.popLast()
