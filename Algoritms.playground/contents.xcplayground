@@ -23,5 +23,6 @@
         <page name='Palindrome Number (LeetCode)'/>
         <page name='Reverse Integer (LeetCode)'/>
         <page name='Valid Parentheses (LeetCode)'/>
+        <page name='Implement strStr() (LeetCode)'/>
     </pages>
 </playground>
