@@ -25,22 +25,22 @@ import XCTest
 */
 
 class Solution {
+    
     func strStr(_ haystack: String, _ needle: String) -> Int {
-        guard needle.isEmpty,
+        guard !needle.isEmpty,
               haystack != needle else { return 0 }
         
-        guard haystack.isEmpty,
+        guard !haystack.isEmpty,
               haystack.count > needle.count else { return -1 }
         
         var tempHaystack = haystack
         var count = 0
         
-        for _ in haystack.enumerated() {
-            
-            count += 1
+        for _ in haystack.indices {
             if tempHaystack.hasPrefix(needle) {
                 return count
             }
+            count += 1
             
             tempHaystack.removeFirst()
         }
