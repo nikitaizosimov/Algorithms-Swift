@@ -24,5 +24,6 @@
         <page name='Reverse Integer (LeetCode)'/>
         <page name='Valid Parentheses (LeetCode)'/>
         <page name='Implement strStr() (LeetCode)'/>
+        <page name='Length of Last Word (LeetCode)'/>
     </pages>
 </playground>
