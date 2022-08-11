@@ -2,7 +2,7 @@
  
 ## LeetCode:
 
-**Total: 22**
+**Total: 23**
 
 ### EASY
 
@@ -26,6 +26,7 @@
 18. The K Weakest Rows in a Matrix  - https://leetcode.com/problems/the-k-weakest-rows-in-a-matrix/
 19. Valid Parentheses - https://leetcode.com/problems/valid-parentheses/
 20. Implement strStr() - https://leetcode.com/problems/implement-strstr/
+21. Length of Last Word - https://leetcode.com/problems/length-of-last-word/
 
 ### MEDIUM
 
