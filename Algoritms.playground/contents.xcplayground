@@ -25,5 +25,6 @@
         <page name='Valid Parentheses (LeetCode)'/>
         <page name='Implement strStr() (LeetCode)'/>
         <page name='Length of Last Word (LeetCode)'/>
+        <page name='Single Number (LeetCode)'/>
     </pages>
 </playground>
