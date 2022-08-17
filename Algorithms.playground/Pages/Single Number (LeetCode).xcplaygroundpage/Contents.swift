@@ -29,11 +29,11 @@ class Solution {
         var tempNums = nums
         
         for num in tempNums {
-            guard let index = tempNums.firstIndex(where: { $0 == num }) else { return }
+            guard let index = tempNums.firstIndex(where: { $0 == num }) else { break }
             
-            tempNums.remove(at: index)
-            
-            if tempNums
+//            tempNums.remove(at: index)
+//            
+//            if tempNums
 //            if
 //            tempNums.remove(at: tempNums.)
         }
