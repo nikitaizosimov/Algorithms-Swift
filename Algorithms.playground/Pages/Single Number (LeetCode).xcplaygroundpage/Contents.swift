@@ -25,17 +25,18 @@ import XCTest
 class Solution {
     
     func singleNumber(_ nums: [Int]) -> Int {
-        
         var tempNums = nums
         
         for num in tempNums {
             guard let index = tempNums.firstIndex(where: { $0 == num }) else { break }
             
-//            tempNums.remove(at: index)
-//            
-//            if tempNums
-//            if
-//            tempNums.remove(at: tempNums.)
+            tempNums.remove(at: index)
+            
+            guard let index = tempNums.firstIndex(where: { $0 == num }) else {
+                return num
+            }
+            
+            tempNums.remove(at: index)
         }
         
         return 0
