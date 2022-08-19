@@ -2,7 +2,7 @@
  
 ## LeetCode:
 
-**Total: 23**
+**Total: 24**
 
 ### EASY
 
@@ -27,6 +27,7 @@
 19. Valid Parentheses - https://leetcode.com/problems/valid-parentheses/
 20. Implement strStr() - https://leetcode.com/problems/implement-strstr/
 21. Length of Last Word - https://leetcode.com/problems/length-of-last-word/
+22. Single Number - https://leetcode.com/problems/single-number/
 
 ### MEDIUM
 

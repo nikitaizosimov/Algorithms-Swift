@@ -25,21 +25,19 @@ import XCTest
 class Solution {
     
     func singleNumber(_ nums: [Int]) -> Int {
-        var tempNums = nums
+        var tempNums = [Int]()
         
-        for num in tempNums {
-            guard let index = tempNums.firstIndex(where: { $0 == num }) else { break }
-            
-            tempNums.remove(at: index)
-            
-            guard let index = tempNums.firstIndex(where: { $0 == num }) else {
-                return num
+        for num in nums {
+            if tempNums.contains(num) {
+                guard let index = tempNums.firstIndex(where: { $0 == num }) else { break }
+                
+                tempNums.remove(at: index)
+            } else {
+                tempNums.append(num)
             }
-            
-            tempNums.remove(at: index)
         }
         
-        return 0
+        return tempNums.first ?? 0
     }
 }
 
@@ -49,12 +47,12 @@ final class Tests: XCTestCase {
         let value = Solution().singleNumber([2, 2, 1])
         XCTAssertEqual(value, 1)
     }
-    
+
     func test1() {
         let value = Solution().singleNumber([4,1,2,1,2])
-        XCTAssertEqual(value, 1)
+        XCTAssertEqual(value, 4)
     }
-    
+
     func test2() {
         let value = Solution().singleNumber([1])
         XCTAssertEqual(value, 1)
